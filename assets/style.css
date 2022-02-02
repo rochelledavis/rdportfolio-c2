@@ -96,18 +96,40 @@ img {
 
 /* My Work Style */
 
-.main-img {
-    max-width: 85%;
-    border: 10px solid var(--color3);
-    padding: 0px;
+.main-img-box {
+    position: relative;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+}
+
+.main-img {
+    border: 10px solid var(--color3);
+    padding: 0px;
+    max-width: 85%;
+}
+
+.main-img-text {
+    position: absolute;
+    background-color: var(--color3);
+    font-size: 20px;
+    top: 0px;
+    left: 80px;
+    color: var(--color5);
+    padding: 20px;
+}
+
+.sm-img-text {
+    position: absolute;
+    background-color: var(--color3);
+    font-size: 18px;
+    color: var(--color5);
+    padding: 10px;
 }
 
 .sm-img img {
     border: 10px solid var(--color3);
-    flex-direction: row;
     max-width: 50%;
 }
 .sm-img {
@@ -116,7 +138,10 @@ img {
     flex-wrap: wrap;
     max-width: 85%;
     padding: 0px;
-    margin: 5px auto 20px auto;
+    /* margin: 5px auto 20px auto; */
+    align-items: center;
+    /* flex-basis: 30%; */
+    flex-direction: row;
 }
 /* Footer Style */
 
