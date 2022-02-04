@@ -71,7 +71,7 @@ header nav ul li a {
 
 /* About Me Style */
 
-img {
+.headshot {
     max-width: 35%;
     padding: 10px;
 }
@@ -102,12 +102,13 @@ img {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+    margin: 0 20px;
 }
 
 .main-img {
     border: 10px solid var(--color3);
     padding: 0px;
-    max-width: 85%;
+    max-width: 100%;
 }
 
 .main-img-text {
@@ -115,7 +116,7 @@ img {
     background-color: var(--color3);
     font-size: 20px;
     top: 0px;
-    left: 80px;
+    left: 0;
     color: var(--color5);
     padding: 20px;
 }
@@ -130,19 +131,18 @@ img {
 
 .sm-img img {
     border: 10px solid var(--color3);
-    max-width: 50%;
+    width: 100%;
+    height: auto;
 }
 .sm-img {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 85%;
-    padding: 0px;
-    /* margin: 5px auto 20px auto; */
+    justify-content: space-between;
+    padding: 0;
     align-items: center;
-    /* flex-basis: 30%; */
     flex-direction: row;
+    margin: 0 20px;
 }
+
 /* Footer Style */
 
 footer {
@@ -165,4 +165,32 @@ footer a {
     padding: 10px;
 }
 
-/* Media Query */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h3, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .about-info p {
+        font-size: 20px;
+}
